@@ -1,0 +1,12 @@
+{
+ "rel-amazon/user-item-purchase": "hybrid",
+ "rel-amazon/user-item-rate": "hybrid",
+ "rel-amazon/user-item-review": "hybrid",
+ "rel-avito/user-ad-visit": "avito_nonparam",
+ "rel-f1/driver-circuit-compete": "f1cc_win",
+ "rel-hm/user-item-purchase": "hmctl",
+ "rel-stack/post-post-related": "recStackPosts",
+ "rel-stack/user-post-comment": "stackLong",
+ "rel-trial/condition-sponsor-run": "trialcond_rt",
+ "rel-trial/site-sponsor-run": "trialsite_rt_np"
+}

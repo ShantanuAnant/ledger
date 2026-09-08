@@ -1,0 +1,12 @@
+{
+ "rel-amazon/user-item-purchase": {"ckpt": "runs/rel-amazon-customer-hybrid-0-recAmz-best.pt"},
+ "rel-amazon/user-item-rate":     {"ckpt": "runs/rel-amazon-customer-hybrid-0-recAmz-best.pt"},
+ "rel-amazon/user-item-review":   {"ckpt": "runs/rel-amazon-customer-hybrid-0-recAmz-best.pt"},
+ "rel-hm/user-item-purchase":     {"ckpt": "runs/rel-hm-customer-hybrid-0-recHm-best.pt"},
+ "rel-stack/user-post-comment":   {"ckpt": "runs/rel-stack-users-hybrid-0-recStack-best.pt"},
+ "rel-stack/post-post-related":   {"ckpt": "runs/rel-stack-posts-hybrid-0-recStackPosts-best.pt"},
+ "rel-avito/user-ad-visit":       {"ckpt": "runs/rel-avito-UserInfo-nonparam-0-recAvito-best.pt", "refresh": true},
+ "rel-f1/driver-circuit-compete": {"ckpt": "runs/rel-f1-drivers-hybrid-0-recF1-best.pt", "project_through": "races"},
+ "rel-trial/condition-sponsor-run": {"ckpt": "runs/rel-trial-conditions-nonparam-0-recTrialCond-best.pt", "refresh": true},
+ "rel-trial/site-sponsor-run":      {"ckpt": "runs/rel-trial-facilities-nonparam-0-recTrialSite-best.pt", "refresh": true}
+}

@@ -1,0 +1,12 @@
+{
+ "rel-f1": "slim/rel-f1-drivers-learned-0-winf14-bestwin.pt",
+ "rel-event": "slim/rel-event-users-learned-0-dn_event-bestwin.pt",
+ "rel-stack": "slim/rel-stack-users-learned-0-winstack4-bestwin.pt",
+ "rel-amazon": "slim/rel-amazon-customer+product-learned-0-dn_amz-bestwin.pt",
+ "rel-hm": "slim/rel-hm-customer+article-nonparam-0-winhm-bestwin.pt",
+ "rel-avito": "slim/rel-avito-UserInfo+AdsInfo-nonparam-0-dn_avito-bestwin.pt",
+ "rel-trial": "slim/rel-trial-studies-learned-0-dn_trial-bestwin.pt",
+ "rel-stack/post-votes": "slim/rel-stack-posts-learned-0-winposts2-bestwin.pt",
+ "rel-stack/user-badge": "slim/rel-stack-users-learned-0-winstack5-bestwin.pt",
+ "rel-stack/user-engagement": "slim/rel-stack-users-learned-0-winstack5-bestwin.pt"
+}

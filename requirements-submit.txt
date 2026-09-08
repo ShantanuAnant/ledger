@@ -1,0 +1,14 @@
+# Scoring / submission environment ONLY -- keep it separate from the training
+# environment in requirements.txt.
+#
+# `relbench.submit` (the official scorer and packager) exists in relbench 3.0.1
+# but NOT in the 2.1.2 that the training stack pins. The two are installed side
+# by side rather than resolved together, because the scorer needs no torch:
+#
+#   python3.12 -m venv .venv-submit
+#   .venv-submit/bin/pip install -r requirements-submit.txt
+#   .venv-submit/bin/python -m relbench.submit preds/ --package
+#
+relbench==3.0.1
+pandas==3.0.5
+numpy==2.5.2

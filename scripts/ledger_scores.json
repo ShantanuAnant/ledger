@@ -1,0 +1,25 @@
+{
+  "_note": "LEDGER test-split scores, as scored by `python -m relbench.submit preds/` (relbench 3.0.1). Fractions, matching the official leaderboard.json convention.",
+  "binary_classification": {
+    "rel-amazon/user-churn": 0.6662, "rel-amazon/item-churn": 0.7971,
+    "rel-avito/user-visits": 0.6491, "rel-avito/user-clicks": 0.6562,
+    "rel-event/user-repeat": 0.7617, "rel-event/user-ignore": 0.7119,
+    "rel-f1/driver-dnf": 0.6787, "rel-f1/driver-top3": 0.7386,
+    "rel-hm/user-churn": 0.6699, "rel-stack/user-engagement": 0.8902,
+    "rel-stack/user-badge": 0.8523, "rel-trial/study-outcome": 0.6744
+  },
+  "regression": {
+    "rel-amazon/user-ltv": 0.2635, "rel-amazon/item-ltv": 0.0929,
+    "rel-avito/ad-ctr": 0.3878, "rel-event/user-attendance": 0.3444,
+    "rel-f1/driver-position": 0.6557, "rel-hm/item-sales": 0.1536,
+    "rel-stack/post-votes": 0.1243, "rel-trial/study-adverse": 0.1572,
+    "rel-trial/site-success": 0.8722
+  },
+  "recommendation": {
+    "rel-amazon/user-item-purchase": 0.0113, "rel-amazon/user-item-rate": 0.0117,
+    "rel-amazon/user-item-review": 0.0079, "rel-avito/user-ad-visit": 0.0068,
+    "rel-f1/driver-circuit-compete": 0.6053, "rel-hm/user-item-purchase": 0.0241,
+    "rel-stack/user-post-comment": 0.0234, "rel-stack/post-post-related": 0.0111,
+    "rel-trial/condition-sponsor-run": 0.0598, "rel-trial/site-sponsor-run": 0.1133
+  }
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ledger-rdb"
+version = "0.1.0"
+description = "Learned Event Distributions for Generic Entity Readout — one self-supervised objective for every RelBench entity task"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "Shantanu Anantwar"}]
+keywords = ["relbench", "relational-deep-learning", "self-supervised",
+            "event-sequences", "transformer"]
+
+# Pinned versions live in requirements.txt; torch and pyg_lib need custom
+# indexes, so they are deliberately NOT resolved from here.
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/ShantanuAnant/ledger"
+
+[tool.setuptools.packages.find]
+include = ["ledger*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

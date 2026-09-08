@@ -1,0 +1,79 @@
+# ---- virtual environments -------------------------------------------------
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# ---- python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- experiment output ----------------------------------------------------
+# runs/ holds CSV metric logs, stdout logs and checkpoints; regenerate by
+# re-running, never commit. Checkpoints are 0.3-12 GB each.
+runs/
+*.pt
+*.ckpt
+*.safetensors
+*.npz
+
+# ---- logs -----------------------------------------------------------------
+*.log
+
+# ---- data -----------------------------------------------------------------
+# RelBench databases live in ~/.cache/relbench and the RDWM corpus cache in
+# ~/.cache/rdwm (override with $RDWM_CACHE). Neither belongs in the repo.
+.cache/
+# ANCHORED to the repo root on purpose. Unanchored, `data/` also matched
+# `rdwm/data/`, and on 2026-08-25 it silently swallowed `rdwm/data/denorm.py`:
+# commit 0313426 shipped the schema.py `from .denorm import extra_columns`
+# without the module it imports, so a fresh clone of main cannot import the
+# package at all and 43 of 52 tests error out. `git add` reported nothing
+# because an ignored file is not "untracked", it is invisible.
+/data/
+relbench-upstream/
+
+# LaTeX sources of the leaderboard papers, kept locally for reference. Only
+# the subdirectories are ignored: the three PDFs HANDOFF section 2 cites by
+# path stay tracked, so those references do not break on a fresh clone.
+/papers/*/
+
+# ---- editors / OS ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ---- session scratch ------------------------------------------------------
+.scratch/
+
+# vendored competitor repos: nested git checkouts, not ours to track
+competitors/
+preds_raw/
+preds/
+.venv-submit/
+
+# ...except our own paper, which IS this repository's work and must be
+# tracked so it can be cloned and built elsewhere. Build artefacts stay out.
+!/papers/RDWM_Every_Row_Is_An_Event/
+papers/RDWM_Every_Row_Is_An_Event/*.pdf
+papers/RDWM_Every_Row_Is_An_Event/*.aux
+papers/RDWM_Every_Row_Is_An_Event/*.log
+papers/RDWM_Every_Row_Is_An_Event/*.out
+papers/RDWM_Every_Row_Is_An_Event/*.bbl
+papers/RDWM_Every_Row_Is_An_Event/*.blg
+papers/RDWM_Every_Row_Is_An_Event/*.fls
+papers/RDWM_Every_Row_Is_An_Event/*.fdb_latexmk
+papers/RDWM_Every_Row_Is_An_Event/*.synctex.gz

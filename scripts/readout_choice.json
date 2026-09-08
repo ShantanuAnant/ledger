@@ -1,0 +1,23 @@
+{
+ "rel-amazon item-churn": "zero",
+ "rel-amazon item-ltv": "probe",
+ "rel-amazon user-churn": "zero",
+ "rel-amazon user-ltv": "zero",
+ "rel-avito ad-ctr": "probe",
+ "rel-avito user-clicks": "zero",
+ "rel-avito user-visits": "zero",
+ "rel-event user-attendance": "probe",
+ "rel-event user-ignore": "zero",
+ "rel-event user-repeat": "zero",
+ "rel-f1 driver-dnf": "probe",
+ "rel-f1 driver-position": "zero",
+ "rel-f1 driver-top3": "probe",
+ "rel-hm item-sales": "probe",
+ "rel-hm user-churn": "probe",
+ "rel-stack post-votes": "zero",
+ "rel-stack user-badge": "probe",
+ "rel-stack user-engagement": "zero",
+ "rel-trial site-success": "probe",
+ "rel-trial study-adverse": "probe",
+ "rel-trial study-outcome": "probe"
+}
