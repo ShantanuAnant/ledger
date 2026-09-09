@@ -2,6 +2,10 @@
 
 **L**earned **E**vent **D**istributions for **G**eneric **E**ntity **R**eadout
 
+[![Checkpoints on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20checkpoints-ledger--relbench-yellow)](https://huggingface.co/ShantanuAnant/ledger-relbench)
+[![Drive mirror](https://img.shields.io/badge/mirror-Google%20Drive-blue)](https://drive.google.com/drive/folders/1aBXufuVfvjljk2N-Xd2Mg-cWseuD3coo)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **A relational database is a ledger of timestamped events.** Read it that way and
 every RelBench entity task becomes one object — a window aggregate — so a single
 self-supervised objective covers all of them. The task appears only at readout.
@@ -128,6 +132,22 @@ python -m ledger.train \
 ```
 
 `--min_hist 1` when most eval rows have fewer than 2 events, else `2`.
+
+## Checkpoints
+
+The 17 checkpoints behind every published number are public — 43.9 GB, slimmed
+for inference (`model` + `args`, no optimizer state), so they score identically
+but cannot be resumed from.
+
+```bash
+pip install huggingface_hub
+hf download ShantanuAnant/ledger-relbench --local-dir ckpt
+```
+
+`recommendation/` serves the WHO-head tasks, `window/` the classification and
+regression tasks, and `MANIFEST.md` maps all 31 tasks to their file. A
+[Google Drive mirror](https://drive.google.com/drive/folders/1aBXufuVfvjljk2N-Xd2Mg-cWseuD3coo)
+holds the same tree.
 
 ## Evaluate
 
